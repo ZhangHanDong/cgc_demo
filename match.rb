@@ -1,7 +1,8 @@
 ta = ['wenyang', 'shooter', 'alex']
 students = ['王菁', 'Davinci', 'kiwi', '一苇', '董笑芸', '杨倩', '吴津']
 
-def team_match(ta, students, num = 2)
+def team_match(ta, students)
+  num = students.size/ ta.size
   ta.map do |t|
     temp = students.sample(num)
     if t == ta.last
